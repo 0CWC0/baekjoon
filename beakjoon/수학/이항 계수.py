@@ -12,6 +12,7 @@ def fact(l): #n 팩토리얼 구하기
     for i in range(2,l+1):
         num*=i
     return num
+
 for _ in range(int(input())):
     west,east=map(int,input().split())
     print(fact(east)//(fact(west)*fact(east-west)))
